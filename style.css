@@ -1,0 +1,21 @@
+body {
+    background-color: #FDFDFD;
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        background-color: #F00;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1199px) {
+    .container {
+        background-color: #0F0;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+.container {
+        background-color: #00F;
+    }
+}
