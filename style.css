@@ -3,19 +3,24 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-    .container {
+    #main {
         background-color: #F00;
+        width: 1200px;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 1199px) {
-    .container {
+    #main {
         background-color: #0F0;
+        min-width: 480px;
+        margin: 0 auto;
     }
 }
 
 @media only screen and (max-width: 479px) {
-.container {
+    #main {
         background-color: #00F;
+        width: 100%;
     }
 }
