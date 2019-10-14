@@ -27,6 +27,14 @@ body {
     margin: 4em 2em;
 }
 
+#content {
+    margin: 4em 2em;
+}
+
+p {
+    margin-bottom: 2em;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -49,7 +57,7 @@ a {
 }
 
 #logo-img {
-    height: 4em;
+    height: 3em;
 }
 
 #footer {
