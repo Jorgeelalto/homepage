@@ -36,8 +36,8 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: black;
+    text-decoration: bold;
+    color: #777;
 }
 
 .big-link {
