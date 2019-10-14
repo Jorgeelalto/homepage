@@ -1,34 +1,7 @@
+/* General overrides for predefined classes */
 body {
     background-color: #FDFDFD;
     margin: 0em;
-}
-
-@media only screen and (min-width: 1000px) {
-    #main {
-        width: 1000px;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 999px) {
-    #main {
-        width: 75%;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-    #main {
-        width: 100%;
-    }
-}
-
-#big-link-container {
-    margin: 4em 2em;
-}
-
-#content {
-    margin: 4em 2em;
 }
 
 p {
@@ -36,8 +9,54 @@ p {
 }
 
 a {
-    text-decoration: bold;
-    color: #777;
+    text-decoration: none;
+    color: #111;
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Media queries. This one is for big screens */
+@media only screen and (min-width: 1000px) {
+    #main {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 480px) and (max-width: 999px) {
+    #main {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+/* Smallest screens */
+@media only screen and (max-width: 479px) {
+    #main {
+        width: 100%;
+    }
+}
+
+
+/* Logo of the webpage. There is a container that makes the vertical space and
+   then the centered image */
+#logo-container {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#logo-img {
+    height: 3em;
+}
+
+
+/* Index link structure. There is a container where all the big-links are */
+#big-link-container {
+    margin: 4em 2em;
 }
 
 .big-link {
@@ -51,19 +70,56 @@ a {
     color: #777;
 }
 
-#logo-container {
-    text-align: center;
-    margin: 2em 0;
+
+/* All the meaningful content of the page (other than the logo, the big links and
+   the footer) are inside the content div */
+#content {
+    margin: 4em 2em;
 }
 
-#logo-img {
-    height: 3em;
+
+/* A structured collection of image links */
+.img-grid {
+    display: grid;
+    padding: 2em 0em;
 }
 
+/* Media queries for the grid. This one is for big screens */
+@media only screen and (min-width: 1000px) {
+    .img-grid {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 480px) and (max-width: 999px) {
+    .img-grid {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Smallest screens */
+@media only screen and (max-width: 479px) {
+    .img-grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.grid-element {
+    margin: 0.125em;
+    transition: opacity 0.2s;
+}
+
+.grid-element:hover {
+    opacity: 0.85;
+}
+
+
+/* The footer is as simple as it gets, not even fixed to the bottom */
 #footer {
     text-align: center;
     color: #333;
     font-family: monospace;
     font-size: 1.2em;
-    padding: 1em;
+    padding: 1em 1em 7em 1em;
 }
