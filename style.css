@@ -2,14 +2,16 @@
 body {
     background-color: #FDFDFD;
     margin: 0em;
+    font-family: sans-serif;
 }
 
 p {
     margin-bottom: 2em;
+    line-height: 1.6em;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: #111;
 }
 
