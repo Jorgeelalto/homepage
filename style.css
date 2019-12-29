@@ -62,10 +62,21 @@ img {
     height: 3em;
 }
 
-/* Header photo, the same margin as the links */
+/* Header photo, with more margin if we are in desktop */
 #header-img {
-    width: 100%;
-    margin-top: 6em;
+    width: 100%; 
+}
+
+@media only screen and (min-width: 480px) {
+    #header-img {
+        margin-top: 6em;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #header-img {
+        margin-top: 2em;
+    }
 }
 
 
