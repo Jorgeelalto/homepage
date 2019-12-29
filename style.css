@@ -55,11 +55,17 @@ img {
    then the centered image */
 #logo-container {
     text-align: center;
-    margin: 2em 0;
+    margin: 3em 0;
 }
 
 #logo-img {
     height: 3em;
+}
+
+/* Header photo, the same margin as the links */
+#header-img {
+    width: 100%;
+    margin-top: 6em;
 }
 
 
