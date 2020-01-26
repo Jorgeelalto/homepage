@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="487.8098"
-     inkscape:cy="309.85406"
+     inkscape:zoom="0.35"
+     inkscape:cx="-137.31151"
+     inkscape:cy="821.42326"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,31 +63,32 @@
        id="rect858"
        width="210"
        height="210"
-       x="0"
-       y="87.000008" />
+       x="3.3158629e-15"
+       y="87" />
     <g
-       id="g856"
-       transform="matrix(1.0382618,0,0,1.0382618,-0.72099844,11.705631)">
+       id="g843"
+       transform="matrix(2.3455891,0,0,2.3455891,-200.24794,-258.35311)">
       <path
-         d="m 53.58231,187.38689 -5.008958,-27.47338 h 4.604193 l 3.642879,21.5031 h 0.0506 l 4.882469,-18.99862 h 4.831874 l 4.629491,19.73226 h 0.07589 l 4.047643,-22.23674 h 3.819963 l -5.489618,27.47338 H 68.76097 L 63.929096,166.8451 h -0.0506 l -5.337829,20.54179 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.8098259px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.29524577"
-         id="path829"
-         inkscape:connector-curvature="0" />
-      <path
-         d="M 86.967017,187.38689 81.95806,159.91351 h 4.604193 l 3.642878,21.5031 h 0.0506 L 95.1382,162.41799 h 4.831863 l 4.629487,19.73226 h 0.0759 l 4.04765,-22.23674 h 3.81996 l -5.48962,27.47338 h -4.90777 L 97.313804,166.8451 h -0.0506 l -5.337828,20.54179 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.8098259px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.29524577"
-         id="path831"
-         inkscape:connector-curvature="0" />
-      <path
-         d="m 120.35172,187.38689 -5.00895,-27.47338 h 4.60419 l 3.64288,21.5031 h 0.0506 l 4.88247,-18.99862 h 4.83188 l 4.62949,19.73226 h 0.0759 l 4.04764,-22.23674 h 3.81997 l -5.48962,27.47338 h -4.90777 l -4.83187,-20.54179 h -0.0506 l -5.33782,20.54179 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.8098259px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.29524577"
+         d="m 114.71054,206.26228 -5.20061,-28.52456 h 4.78036 l 3.78226,22.32585 h 0.0525 l 5.06928,-19.72554 h 5.01676 l 4.80662,20.48725 h 0.0788 l 4.20251,-23.08756 h 3.96613 l -5.69966,28.52456 h -5.09555 l -5.01675,-21.32776 h -0.0525 l -5.54206,21.32776 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.8098259px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.34480417"
          id="path833"
          inkscape:connector-curvature="0" />
       <path
-         d="m 147.58849,187.38689 v -7.48814 h 7.48814 v 7.48814 z"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.8098259px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.29524577"
+         d="m 142.98943,206.26228 v -7.77465 h 7.77465 v 7.77465 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.8098259px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.34480417"
          id="path835"
          inkscape:connector-curvature="0" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:1.25;font-family:'Lucida Console';-inkscape-font-specification:'Lucida Console';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="70.559151"
+       y="136.63828"
+       id="text847"><tspan
+         sodipodi:role="line"
+         id="tspan845"
+         x="70.559151"
+         y="146.34837"
+         style="stroke-width:0.26458332" /></text>
   </g>
 </svg>
