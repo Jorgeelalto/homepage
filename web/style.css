@@ -147,6 +147,11 @@ img {
 
 
 /* CV specific things*/
+.cv-whatiknow {
+    margin-top: 0px;
+    margin-bottom: 0.5em;
+}
+
 #cv-photo {
     display: block;
     width: 12em;
@@ -195,5 +200,5 @@ img {
     color: #333;
     font-family: monospace;
     font-size: 1.2em;
-    padding: 1em 1em 7em 1em;
+    padding: 2em 1em 7em 1em;
 }
