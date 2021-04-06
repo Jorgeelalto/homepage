@@ -69,7 +69,7 @@ img {
 
 /* Header photo, with more margin if we are in desktop */
 #header-img {
-    width: 100%; 
+    width: 100%;
 }
 
 @media only screen and (min-width: 480px) {
