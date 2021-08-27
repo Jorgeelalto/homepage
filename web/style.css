@@ -34,7 +34,7 @@ img {
 
 /* Media queries. This one is for big screens */
 @media only screen and (min-width: 1000px) {
-    #main {
+    article {
         width: 1000px;
         margin: 0 auto;
     }
@@ -42,7 +42,7 @@ img {
 
 /* Medium screens */
 @media only screen and (min-width: 480px) and (max-width: 999px) {
-    #main {
+    article {
         width: 85%;
         margin: 0 auto;
     }
@@ -50,7 +50,7 @@ img {
 
 /* Smallest screens */
 @media only screen and (max-width: 479px) {
-    #main {
+    article {
         width: 100%;
     }
 }
@@ -104,7 +104,7 @@ img {
 
 /* All the meaningful content of the page (other than the logo, the big links and
    the footer) are inside the content div */
-#content {
+section {
     margin: 4em 2em;
 }
 
@@ -195,7 +195,7 @@ img {
 }
 
 /* The footer is as simple as it gets, not even fixed to the bottom */
-#footer {
+footer {
     text-align: center;
     color: #333;
     font-family: monospace;
