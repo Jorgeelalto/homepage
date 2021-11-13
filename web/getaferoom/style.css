@@ -1,0 +1,226 @@
+/* General overrides for predefined classes */
+body {
+    background-color: #000;
+    margin: 0em;
+    font-family: 'Barlow', sans-serif;
+    color: #FFF;
+}
+
+p {
+    margin: 1.5em 0.05em 1.5em 0.05em;
+    line-height: 1.6em;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: underline;
+    color: #DDD;
+}
+
+h1 {
+    letter-spacing: 3px;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-weight: 200;
+    text-align: left;
+}
+
+img {
+    width: 100%;
+}
+
+.img-center {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+
+/* Media queries. This one is for big screens */
+@media only screen and (min-width: 1000px) {
+    #main {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 480px) and (max-width: 999px) {
+    #main {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+/* Smallest screens */
+@media only screen and (max-width: 479px) {
+    #main {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.75em;
+        text-align: center;
+    }
+}
+
+
+/* Logo of the webpage. There is a container that makes the vertical space and
+   then the centered image */
+#logo-container {
+    text-align: center;
+    margin: 3em 0;
+}
+
+#logo-img {
+    height: 3em;
+}
+
+/* Header photo, with more margin if we are in desktop */
+#header-img {
+    width: 100%; 
+}
+
+@media only screen and (min-width: 480px) {
+    #header-img {
+        margin-top: 6em;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    #header-img {
+        margin-top: 2em;
+    }
+}
+
+#mid-img {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+
+/* Index link structure. There is a container where all the big-links are */
+#big-link-container {
+    margin: 4em 2em;
+    text-align: center;
+}
+
+.big-link {
+    font-size: 2em;
+    margin: 0.5em 0;
+    letter-spacing: 3px;
+    transition: letter-spacing 0.2s, color 0.2s;
+}
+
+.big-link:hover {
+    color: #777;
+    letter-spacing: 5px;
+}
+
+
+/* All the meaningful content of the page (other than the logo, the big links and
+   the footer) are inside the content div */
+#content {
+    margin: 4em 2em;
+}
+
+
+/* A structured collection of image links */
+.img-grid {
+    display: grid;
+    padding: 2em 0em;
+}
+
+/* Media queries for the grid. This one is for big screens */
+@media only screen and (min-width: 1000px) {
+    .img-grid {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 480px) and (max-width: 999px) {
+    .img-grid {
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Smallest screens */
+@media only screen and (max-width: 479px) {
+    .img-grid {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.grid-element {
+    margin: 0.125em;
+    transition: opacity 0.2s;
+}
+
+.grid-element:hover {
+    opacity: 0.85;
+}
+
+
+/* The footer is as simple as it gets, not even fixed to the bottom */
+#footer {
+    text-align: center;
+    color: #BBB;
+    font-family: monospace;
+    font-size: 1.2em;
+    padding: 1em 1em 7em 1em;
+}
+
+#video-placeholder {
+    border-color: #CCC;
+    border-width: 2px;
+    border-style: dashed;
+    width: 99.6%;
+    padding-top: 56.25%;
+    position: relative;
+    margin-bottom: 2.5em;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#line {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+@media only screen and (max-width: 479px) {
+    #line {
+        grid-template-columns: 50% 50%;
+        display: none;
+    }
+}
+
+#line-m {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: none;
+}
+@media only screen and (max-width: 479px) {
+    #line-m {
+        grid-template-columns: 50% 50%;
+        display: block;
+    }
+}
