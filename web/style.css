@@ -10,6 +10,11 @@ p {
     line-height: 1.6em;
 }
 
+li {
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
 a {
     text-decoration: underline;
     color: #111;
@@ -101,6 +106,17 @@ img {
     color: #777;
 }
 
+.small-link {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    transition: margin 0.2s, color 0.2s;
+}
+
+.small-link:hover {
+    margin-left: 0.2em;
+    color: #777;
+}
+
 
 /* All the meaningful content of the page (other than the logo, the big links and
    the footer) are inside the content div */
@@ -146,7 +162,7 @@ section {
 }
 
 
-/* CV specific things*/
+/* CV specific things */
 .cv-whatiknow {
     margin-top: 0px;
     margin-bottom: 0.5em;
