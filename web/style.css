@@ -218,3 +218,26 @@ footer {
     font-size: 1.2em;
     padding: 2em 1em 7em 1em;
 }
+
+
+/*-----------
+SHOES SECTION
+-----------*/
+
+th {
+    text-align: left;
+    padding: 0.5em 2em 0.5em 0em;
+}
+
+.shoe-name {
+    font-weight: normal;
+}
+
+.shoe-technical {
+    font-weight: normal;
+    font-family: monospace;
+}
+
+.shoe-fit {
+    font-weight: normal;
+}
