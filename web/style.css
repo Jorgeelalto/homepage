@@ -241,3 +241,41 @@ th {
 .shoe-fit {
     font-weight: normal;
 }
+
+
+/*---------
+CAR SECTION
+---------*/
+.car-info-spec {
+    font-weight: normal;
+}
+
+.car-info-value {
+    font-weight: normal;
+}
+
+.car-info-value-mono {
+    font-weight: normal;
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+.car-option-code {
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+.car-option-name {
+    font-weight: normal;
+}
+
+.car-option-name-removed {
+    font-weight: normal;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+.car-option-info {
+    font-weight: normal;
+    font-style: italic;
+}
