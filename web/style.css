@@ -220,26 +220,22 @@ footer {
 }
 
 
-/*-----------
-SHOES SECTION
------------*/
+/*-------------------
+GENERIC TABLE SECTION
+-------------------*/
 
 th {
     text-align: left;
     padding: 0.5em 2em 0.5em 0em;
 }
 
-.shoe-name {
+.item-normal {
     font-weight: normal;
 }
 
-.shoe-technical {
+.item-monospace {
     font-weight: normal;
     font-family: monospace;
-}
-
-.shoe-fit {
-    font-weight: normal;
 }
 
 
