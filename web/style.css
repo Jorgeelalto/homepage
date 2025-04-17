@@ -229,6 +229,11 @@ th {
     padding: 0.5em 2em 0.5em 0em;
 }
 
+td {
+    text-align: left;
+    padding: 0.5em 2em 0.5em 0em;
+}
+
 .item-normal {
     font-weight: normal;
 }
