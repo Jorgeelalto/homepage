@@ -1,0 +1,21 @@
+name: Deploy to DonDominio
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Upload to FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.7thpyramid.es
+          username: ${{ secrets.DONDOMINIO_FTP_USER }}
+          password: ${{ secrets.DONDOMINIO_FTP_PASS }}
+          local-dir: web/
