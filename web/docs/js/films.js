@@ -16,11 +16,19 @@ list = [];
 // Functions
 // ---------
 
-// Get list from HTML
 function getListFromHTML() {
-	list = document.getElementById("draft-film-list").innerText.split("\n")
-	list = list.map((element) => element.trim())
-	console.log("Found " + list.length + " films")
+	html_list = document.getElementById("draft-film-list").innerText.split("\n")
+	html_list = html_list.map((element) => element.trim())
+	console.log("Found " + html_list.length + " films")
+	list = []
+	for (const film of html_list) {
+		if (film) {
+			name = film.replace(RegExp(' \\\([0-9- ]+\\\)', "i"), "")
+			year = film.match(RegExp('\\\([0-9- ]+\\\)', "i"))[0]
+				.replace("(", "").replace(")", "")
+			list.push({'title': name, 'year': year})
+		}
+	}
 	return list
 }
 
@@ -29,19 +37,15 @@ function drawListIntoHTML(list) {
 	film_table = document.getElementById("film-table")
 	for (const film of list) {
 		if (film) {
-			name = film.replace(RegExp(' \\\([0-9- ]+\\\)', "i"), "")
-			year = film.match(RegExp('\\\([0-9- ]+\\\)', "i"))[0]
-				.replace("(", "").replace(")", "")
-
 			new_item = film_table.insertRow()
 
 			name_cell = new_item.insertCell(0)
 			name_cell.className = placeholder.cells[0].className
-			name_cell.innerText = name
+			name_cell.innerText = film['title']
 
 			year_cell = new_item.insertCell(1)
 			year_cell.className = placeholder.cells[1].className
-			year_cell.innerText = year
+			year_cell.innerText = film['year']
 		}
 	}
 }
@@ -49,6 +53,15 @@ function drawListIntoHTML(list) {
 function sortListByTitle(list) {
 	return list
 }
+
+function sortListByYear(list) {
+	return list
+}
+
+
+// -----
+// Hooks
+// -----
 
 
 // ----------
