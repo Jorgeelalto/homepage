@@ -32,9 +32,18 @@ function getListFromHTML() {
 	return list
 }
 
-// Draw list into HTML
-function drawListIntoHTML(list) {
+
+function cleanListInHTML() {
 	film_table = document.getElementById("film-table")
+	while (film_table.rows.length > 1) {
+		film_table.deleteRow(-1)
+	}
+	return true;
+}
+
+
+function drawListIntoHTML(list) {
+	cleanListInHTML()
 	for (const film of list) {
 		if (film) {
 			new_item = film_table.insertRow()
@@ -48,14 +57,20 @@ function drawListIntoHTML(list) {
 			year_cell.innerText = film['year']
 		}
 	}
+	return list
 }
 
+
 function sortListByTitle(list) {
-	return list
+	return list.sort(
+		(a, b) => (a['title'] > b['title']) ? 1 : ((a['title'] < b['title']) ? -1 : 0)
+	)
 }
 
 function sortListByYear(list) {
-	return list
+	return list.sort(
+		(a, b) => (a['year'] > b['year']) ? 1 : ((a['year'] < b['year']) ? -1 : 0)
+	)
 }
 
 
@@ -63,6 +78,15 @@ function sortListByYear(list) {
 // Hooks
 // -----
 
+function hookSortByTitle() {
+	console.log("Sorting list by title...")
+	return drawListIntoHTML(sortListByTitle(list))
+}
+
+function hookSortByYear() {
+	console.log("Sorting list by year...")
+	return drawListIntoHTML(sortListByYear(list))
+}
 
 // ----------
 // Executions
